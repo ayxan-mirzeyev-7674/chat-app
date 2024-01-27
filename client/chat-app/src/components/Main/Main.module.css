@@ -1,0 +1,191 @@
+.body{
+    background-color: rgb(12,19,23);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    width: calc(100% - 100px);
+    height: calc(100% - 75px);
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.users{
+    width: 40%;
+    max-width: 480px;
+    height: 100%;
+    background-color: rgb(17, 27, 33);
+    overflow: scroll;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.chat{
+    width: 60%;
+    min-width: calc(100% - 480px);
+    height: 100%;
+    background-color: rgb(34,46,53);
+    border-left: 1px solid rgba(134,150,160, 0.15);
+    position: relative;
+}
+
+.addDiv{
+    display: flex;
+    height: 72px;
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.addDiv:hover{
+    background-color: #202c33;
+}
+
+.imageDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 77px;
+    height: 72px;
+
+}
+
+.image{
+    width: 49px;
+    height: 49px;
+    object-fit: cover;
+}
+
+
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 77px);
+    height: 100%;
+}
+
+.text{
+    color: #e9edef;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: left;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.currentUserDiv{
+    display: flex;
+    height: 59px;
+    background-color: #202c33;
+}
+
+.currentUserImageDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 59px;
+}
+
+.userImage{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.userTextDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 77px);
+    
+}
+
+.userText{
+    color: #e9edef;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 59px;
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.logOutButton{
+    margin-right: 20px;
+    background-color: transparent;
+    color: #e9edef;
+    border: 0;
+}
+
+.addList{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: #e9edef;
+    top: 131px;
+    background-color: #202c33;
+    overflow: scroll;
+}
+.addListItem{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+    border-top: 1px solid rgb(42, 57, 66);
+    padding: 5px 20px;
+}
+.addListItemText{
+    color: #e9edef;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addListItemImageDiv{
+    height: 49px;
+    width: 49px;
+}
+.addListItemImage{
+    width: 49px;
+    height: 49px;
+}
+@media only screen and (max-width: 1440px) {
+    .main{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .main{
+        flex-direction: column;
+    }
+    .users{
+        width: 100%;
+        height: 400px;
+        max-width: 100%;
+        position: relative;
+        padding-top: 59px;
+    }
+    .currentUserDiv{
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    .chat{
+        width: 100%;
+    }
+}

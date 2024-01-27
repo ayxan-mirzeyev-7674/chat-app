@@ -1,0 +1,32 @@
+.body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(13,110,253);
+background: linear-gradient(90deg, rgba(13,110,253,1) 0%, rgba(188,199,205,1) 51%, rgba(0,212,255,1) 100%);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px  30px;
+    border-radius: 10px;
+    background-color: white;
+    width: 400px;
+}
+
+
+.submit{
+    width: 100%;
+}
+
+
+.header{
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}

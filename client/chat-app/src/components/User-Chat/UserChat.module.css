@@ -1,0 +1,62 @@
+.image{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.username{
+    color: #e9edef;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.lastMessage{
+    color: rgb(134, 150, 160);
+    margin-bottom: 0px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid rgb(42, 57, 66);
+    width: calc(100% - 77px);
+    text-align: left;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    height: 72px;
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+
+.selectedChat{
+    display: flex;
+    height: 72px;
+    cursor: pointer;
+    background-color: rgb(42, 57, 66);
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+
+.main:hover{
+    background-color: #202c33;
+}
+
+.imageDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 77px;
+    height: 72px;
+
+}
